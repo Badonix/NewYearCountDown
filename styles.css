@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+*{
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+.title{
+  text-align: center;
+  margin-top:150px;
+  font-size:100px;
+  text-shadow:  3px 3px red;
+}
+
+
+body{
+ 
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #5276ee, #3ce1e7, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  align-items: center;
+  justify-content: center;
+
+}
+.countdown-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+h1{
+  font-size: 4rem;
+  margin-top: -3rem;
+  
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.big-text{
+ font-size:6rem;
+ line-height: 1;
+ margin: 0 2rem;
+ text-shadow:  3px 3px red;
+ font-weight: bold;
+}
+
+.countdown-el{
+  text-align: center;
+  font-weight: bold;
+}
+
+.countdown-el span{
+  font-size:1.3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 700px){
+  .countdown-el span{
+    font-size:1rem;}
+
+    .big-text{font-size:4rem;}
+    .title{
+      font-size:50px;
+    }
+}
